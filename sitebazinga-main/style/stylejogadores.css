@@ -1,0 +1,131 @@
+.nav-link {
+    transition: all 0.2s;
+    position: relative;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.nav-link::after {
+    content: '';
+    transition: all 0.2s;
+    opacity: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar-brand {
+    font-family: 'Gasoek One', sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+body {
+    background-color: #272727;
+    color: white;
+
+}
+
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 50vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logo {
+    display: flex;
+    margin: 10px;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.logo:nth-child(4) {
+    transition-delay: 1000ms;
+}
+
+.logo:nth-child(5) {
+    transition-delay: 1200ms;
+}
+
+.logo:nth-child(6) {
+    transition-delay: 1600ms;
+}
+
+.desc {
+    transition-delay: 100ms;
+    color: green;
+}
+
+
+#btnverm {
+    color: red;
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border: black;
+    transition: all , color 0.3s , background-color 0.3s;
+}
+
+#btnverm:hover{
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(254, 131, 7), rgb(243, 69, 255));
+    border: white;
+}
+
+#btnverde {
+    color: green;
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border: black;
+    transition: all , color 0.3s , background-color 0.3s;
+    margin-left: 80px;
+}
+
+#btnverde:hover{
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(3, 255, 3), rgb(17, 114, 4));
+    border: white;
+}
+
+    button{
+        cursor: pointer;
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 5px;
+        margin-left: 8px;
+    }
+    .dark{
+        background-color: whitesmoke;
+        color: #222;
+        
+    }

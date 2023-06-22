@@ -1,0 +1,51 @@
+.nav-link{
+    transition: all 0.2s;
+    position: relative;
+}
+
+.nav-link:hover::after{
+   opacity: 1;
+}
+
+.nav-link::after{
+    content: '';
+    transition: all 0.2s;
+    opacity: 0; 
+    height: 2px;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar-brand{
+    font-family: 'Gasoek One', sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+body {
+    background-color: #272727;
+    color: white;
+}
+
+#botao{
+    padding: 10px;
+    border-color: darkgreen;
+    color: white;
+    background-color: #272727;
+
+    transition: transform 0.3s, background-color 0.3s , color 0.3s;
+}
+
+#botao:hover {
+    transform: translateY(-10px);
+    background-color: darkgreen; 
+    color: #000000;
+}
+
+.dark{
+    background-color: whitesmoke;
+    color: #222;
+   
+  }
