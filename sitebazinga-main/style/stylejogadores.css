@@ -129,3 +129,35 @@ section {
         color: #222;
         
     }
+
+    .modal-content,.modal-header,.modal-body{
+        background: none;
+        border: none;
+    }
+
+    .alert{
+        width: 50%;
+        text-align: center;
+        color: #000000;
+    }
+
+    #modal-content,#modal-header{
+        border:solid;
+    }
+
+    #modal-content{
+        border-width: 3px ;
+    }
+
+    #modal-header{
+        border-width: 1px ;
+        border-top: 0.5px;
+    }
+
+    #modal-body{}
+
+    #modal-title{}
+
+    .modal{
+        margin-bottom: -400px;
+    }
